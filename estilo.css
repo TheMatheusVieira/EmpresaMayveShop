@@ -1,0 +1,125 @@
+/*definindo a fonte do texto de todo o site, margens e bordas*/
+body{
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Topo*/
+header{
+    background-color: black;
+    padding: 20px;
+}
+
+.logo_caixa{
+    position: relative;
+    width: 940px;
+    margin-left: 100px;
+}
+.logo{
+    width: 12%;
+    padding-top: 5px;
+    padding-right: 200px;
+}
+
+/*Conteúdo*/
+.titulo-E{
+    text-align: left;
+    font-size: 2em;
+    margin-left: 70px;
+    color: black;
+}
+
+.LinhaTitulo{
+    background-color: black;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/*Estilização footer*/
+.copyright{
+    color: black;
+    font-size: 12px;
+    margin: 10px;
+}
+.logo_footer{
+    margin-top: 500px;
+    width: 4%;
+}
+
+.footer{
+    padding-top: 5%;
+    align-content: center;
+    text-align: center;
+}
+
+/*Tabela*/
+.titulos-Tabela{
+    text-align: center;
+    font-weight: bold;
+    background-color: gainsboro;
+}
+
+.tabela{
+    align-items: center;
+    text-align: center;
+    width: 1710px;
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.info-invalida {
+    background-color: red;
+}
+
+/*formulário*/
+.input-padrao{
+    margin-right: 10px;
+    padding: 6px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.botaoaddprod{
+    background-color: black;
+    color: white;
+    border-color: white;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+.form{
+    width: 10%;
+    text-align: left;
+    padding-left: 72px;
+}
+
+.selectproduto{
+   margin-bottom: 10px;
+   padding: 2px;
+   height: 3%;
+   font-size: 15px;
+   padding-top: 4px;
+}
+
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+}
+
+#mensagens-erro{
+    color: red;
+}
+
+#filtrar-tabela{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.invisivel{
+    display: none;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <link href="estilo.css" rel="stylesheet">
+        <link href="LogoMV.ico" rel="shortcut icon">
+        <meta charset="UTF-8" />
+        <title>Mayve Shop</title>
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="logo_caixa">
+                <img src="LogoMV.png" title="Moda Virtual" class="logo">
+            </div>
+        </header>
+
+        <main>
+           <section class="container">
+            <h2 class="titulo-E" onClick="this.innerHTML='Produtos!'">Encomendas</h2>
+            <label for="filtrar-tabela">Filtrar:</label>
+            <input type="text" name="filtro" id="filtra-tabela" placeholder="Digite o nome do cliente">
+            <hr size="3" class="LinhaTitulo"> 
+
+                <table border="1" cellpadding="7" class="tabela">
+                    
+            <thead>
+            <tr class="titulos-Tabela">
+                    <td>Nome</td>
+                    <td>Produto</td>
+                    <td>Quantidade</td>
+                    <td>Valor Unitário</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+
+                <tbody id="tabela-clientes">
+                <tr class="cliente">
+                    <td class="info-nome">Marcos</td>
+                    <td class="info-produto">Notebook Dell Vostro 7620 1TB</td>
+                    <td class="info-qtde">2</td>
+                    <td class="info-valor">8399</td>
+                    <td class="info-total">R$</td>
+                </tr>
+
+                <tr class="cliente">
+                    <td class="info-nome">Lucas</td>
+                    <td class="info-produto">Smartphone Galaxy S24 256GB</td>
+                    <td class="info-qtde">1</td>
+                    <td class="info-valor">5399</td>
+                    <td class="info-total">R$</td>
+                </tr>
+
+                <tr class="cliente">
+                    <td class="info-nome">Maria Clara</td>
+                    <td class="info-produto">JBL GO 3</td>
+                    <td class="info-qtde">2</td>
+                    <td class="info-valor">242</td>
+                    <td class="info-total">R$</td>
+                </tr>
+
+                <tr class="cliente">
+                    <td class="info-nome">Roberto Carlos</td>
+                    <td class="info-produto">Tablet Samsung S6 Lite 64GB</td>
+                    <td class="info-qtde">3</td>
+                    <td class="info-valor">1699</td>
+                    <td class="info-total">R$</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <section class="container">
+            <h1 class="titulo-E" id="titulo-form">Adicionar nova encomenda</h1>
+
+            <!-- Exibe os erros de validação do formulário -->
+            <ul id="mensagens-erro"></ul>
+
+            
+            <form name="NovaEncomenda" method="get" target="_blank" id="form-adiciona" class="form">
+                <fieldset>
+
+				<div class="input-padrao">
+
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="" placeholder="Insira seu nome" class="input-padrao" required>
+			
+					<label for="qtde">Quantidade:</label>
+                    <input type="int" id="qtde" name="" placeholder="Digite a quantidade" class="input-padrao" required>
+
+					<label for="prod">Produto:</label>
+					<select id="nprod" name="produto" class="selectproduto">
+						<option value="">Selecione</option>
+						<option>Smartphone Galaxy S24 256GB</option>
+						<option>Smartphone Galaxy S23 256GB</option>
+						<option>Notebook Dell Vostro 7620 1TB</option>
+						<option>Tablet Samsung S6 Lite 64GB</option>
+						<option>Amazon Fire TV Stick Lite</option>
+						<option>Fone Samsung Buds Live</option>
+						<option>Caixa de som JBL GO 3</option>
+						<option>JBL FLIP ESSENTIAL 2</option>
+					</select>
+			
+
+					<label for="unitario">Preço do produto:</label>
+					<input type="int" id="unitario" name="unitario" placeholder="Digite o preço por unidade" class="input-padrao" required>
+				</div>
+
+
+				<input type="submit" id="adicionar-encomenda" class="botaoaddprod">
+                </fieldset>
+			</form>
+
+
+
+
+        </section>
+         
+    </main>
+
+    <script src="js/CalculaTotal.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/removerencomenda.js"></script>
+    <script src="js/filtrar.js"></script>
+    
+
+    <footer class="footer">
+        <img src="LogoMV.png" alt="Moda Virtual" class="logo_footer">
+        <p class="copyright">&copy;Todos os direitos reservados para a Mayve Shop.</p>
+    </footer>
+</body>
+</html>
+
+           
+
+
+                
+
+
+                <!-- <button class="botaoaddprod" type="submit" onClick="adicionarLinha()">Adicionar</button> -->
+            	<!-- <button id="adicionar-encomenda" class="botao bto-principal">Adicionar</button> -->
+          
+
+       <!-- <div id="janela" style="display: none; position: absolute;">
+                <iframe id="framejanela" name="iframejanela" frameborder="3" style="height: 200px;"></iframe>
+            </div>
+              <input type="button" name="alert" id="alert" value="Clique" onClick="abrir()">
+          <script language="javascript">
+            function abrir(){
+                document.getElementById("nprod").value;
+                window.open('frame2.php', "framejanela");
+
+            <div class="alert">
+             <span class="closebtn" onClick="window.frameElement.parentElement.style.display='none';">&times;</span>
+                Ação
+            </div>
+          }
+          </script>  -->
+
+           
